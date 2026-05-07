@@ -212,11 +212,11 @@ st.markdown(
         text-align: center;
         color: white;
     ">
-        <h2>Acurácia da previsão</h2>
+        <h2>Previsão do Modelo</h2>
         <h1 style="font-size: 60px; margin: 10px 0;">{caractere_previsto}</h1>
     </div>
     """,
     unsafe_allow_html=True
 )
-st.markdown("#### Nível de confiança")
+st.markdown("#### Acurácia da previsão")
 st.progress(float(confianca[0]), f"{float(confianca[0])*100:.2f}%")
