@@ -71,7 +71,7 @@ def preprocess_canvas_image(img):
 
 model = mlp.MLP_EMNIST()
 device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
-checkpoint = torch.load(r"backup_models\bymerge.pth", weights_only=True, map_location=device)
+checkpoint = torch.load(r"AI models\bymerge.pth", weights_only=True, map_location=device)
 model.load_state_dict(checkpoint['modelo_state'])
 model.to(device)
 model.eval()
