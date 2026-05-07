@@ -112,8 +112,6 @@ with tab_canvas:
 
 with tab_upload_image:
     image_uploaded = st.file_uploader("Envie uma imagem", type=["png", "jpg", "jpeg"], help="Tamanho máximo: 50MB", key="image_upload", max_upload_size=50)
-    
-    st.write(image_uploaded)
 
 
 if st.session_state["tabs"] == "🖼️ Upload de Imagem":
